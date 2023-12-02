@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('img/tnkn29-y3ZITMkqZWw-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  width: 85%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 30px;
+  color: rgb(75, 91, 104);
+}
+nav ul li {
+  padding: 10px;
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.action {
+  display: flex;
+  padding: 10px 2px;
+}
+
+.button-login {
+  padding: 10px 28px;
+  background-color: wheat;
+  color: black;
+  margin-right: 16px;
+}
+
+.button-signUp {
+  padding: 10px 28px;
+  border: solid 1px wheat;
+  background-color: transparent; /* Hapus latar belakang dan tambahkan warna latar belakang sesuai kebutuhan */
+  color: white;
+}
+
+.login {
+  margin-right: 16px;
+}
+
+.content {
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.heading-text {
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 24px;
+  line-height: 80%;
+}
+
+.paragraf-text {
+  font-size: 16px;
+  color: aliceblue;
+  font-weight: 200;
+  padding-bottom: 24px;
+  line-height: 140%;
+}
+
+.text-content {
+  padding: 40px;
+  text-transform: capitalize;
+}
+
+.button {
+  padding: 12px 24px;
+  border: solid 1px wheat;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button span {
+  background: wheat;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  width: 100%;
+}
+
+.button:hover {
+  color: black;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    padding: 15px 40px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 20px 60px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+}
